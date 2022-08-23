@@ -9,5 +9,4 @@ RUN chown -R www:www /var/lib/nginx
 RUN chown -R www:www /www
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY index.html /www
-RUN nginx
-RUN ls /www
+CMD nginx
