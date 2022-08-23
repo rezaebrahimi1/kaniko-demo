@@ -1,5 +1,5 @@
 #FROM klakegg/hugo:0.78.2-alpine AS build
-FROM gitlab.ficld.ir/alpine:latest AS build
+FROM registry.ficld.ir/alpine:latest AS build
 RUN apk add -U git
 COPY . /src
 RUN make init
