@@ -9,5 +9,4 @@ RUN chown -R www:www /var/lib/nginx
 RUN chown -R www:www /www
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY index.html /www
-EXPOSE 80
 CMD ["nginx","-g","daemon off;"]
